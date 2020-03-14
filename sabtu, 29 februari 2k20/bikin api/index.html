@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
+		.then(function(res){
+			return res.json();
+		})
+		.then (function(data){
+			console.log(data)	
+		})
+
+	</script>
+</body>
+</html>
