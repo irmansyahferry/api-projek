@@ -1,0 +1,25 @@
+<div>
+
+  TO DO : <textarea id="TO DO"></textarea>
+
+  <br><br/>
+  <button id="submit">Submit</button>
+
+  <br><br/>
+  <h1>TO DO LIST :</h1>
+  <div id="TO DO :"></div>
+</div>
+<script>
+  document.getElementById('submit').addEventListener('click', function(){
+    var TO DO = document.getElementById('TO DO :').value
+    var htmlTemplate = `
+      <ul>
+        <li>nama: ${nama}</li>
+        <li>email: ${email}</li>
+        <li>pesan: ${pesan}</li>
+      </ul>`;
+
+    var oldValue = document.getElementById('TO DO').innerHTML;
+    document.getElementById('TO DO').innerHTML= oldValue + htmlTemplate
+  });
+</script>

@@ -1,0 +1,15 @@
+<p id="text">HI saya tampil</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+<script type="text/javascript">
+	var textElement = document.getElementById('text');
+
+	document.getElementById('hide').addEventListener('click',function(){
+		textElement.style.visibility = 'hidden';
+	});
+	document.getElementById('show').addEventListener('click',function(){
+		textElement.style.visibility = 'Visible';
+	});
+</script>
